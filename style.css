@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: #141e30;
+  color: aliceblue;
+  font-size: 18px;
+}
+
+.svg-container {
+  overflow: hidden;
+  height: 15rem;
+}
+
+.heading-svg {
+  scale: 150%;
+  margin-top: 3rem;
+}
+
+.header {
+  position: relative;
+}
+
+.card {
+  max-width: 75vw;
+  margin: 3rem auto;
+  background-image: linear-gradient(135deg, #141e30, #243b55);
+  border-radius: 1rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.text-content {
+  display: inline-block;
+  padding: 1rem 2rem;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.eventImg {
+  max-width: 34rem;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: inherit;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  justify-self: center;
+  background-color: #02a89a;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 68rem) {
+  .svg-container {
+    height: 10rem;
+  }
+  .card {
+    max-width: 80vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-2 {
+    flex-direction: column-reverse;
+  }
+  .eventImg {
+    max-width: 100%;
+  }
+  .text-content {
+    padding: 1rem;
+  }
+  .heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 45rem) {
+  body {
+    font-size: 1rem;
+  }
+  .svg-container {
+    height: 7.5rem;
+  }
+  .card {
+    max-width: 90vw;
+  }
+}
