@@ -32,8 +32,12 @@ body {
   background-image: linear-gradient(135deg, #141e30, #243b55);
   border-radius: 1rem;
 
+  box-shadow: 0 0 15px #ffffffaa;
+
   display: flex;
   justify-content: center;
+  transform-style: preserve-3d;
+  /* perspective: 100rem; */
 }
 
 .text-content {
@@ -45,6 +49,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  transform: translateZ(2.5rem);
 }
 
 .heading {
@@ -68,7 +73,7 @@ body {
   justify-self: center;
   background-color: #02a89a;
   border-radius: 0.5rem;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 0.5rem 0;
 }
 
 @media (max-width: 68rem) {

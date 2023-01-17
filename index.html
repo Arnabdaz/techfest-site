@@ -74,5 +74,18 @@
         <a href="#" class="btn">Know more &rAarr;</a>
       </div>
     </div>
+    <script src="vanilla-tilt.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      if (screen.width > 600) {
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+          reverse: true,
+          max: 2.5,
+          scale: 1.025,
+          glare: true,
+          reverse: true,
+          "max-glare": 0.1,
+        });
+      }
+    </script>
   </body>
 </html>
